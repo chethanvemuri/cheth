@@ -1,0 +1,36 @@
+package Prime;
+
+import java.util.Scanner;
+
+public class Prime {
+
+	public static void main(String[] args) {
+		
+		Scanner b = new Scanner(System.in);
+		int a,flag=0;
+		System.out.println("Enter a number: ");
+		a=b.nextInt();
+		if(a==0 || a==1)
+		{
+			System.out.println("Neither prime nor Composite");
+		}
+		else
+		{
+			for(int i=2;i<a/2;i++)
+			{
+				if(a%i==0)
+				{
+					System.out.println("Not a prime");
+					flag=1;
+					break;
+				}
+			}
+			if(flag==0)
+			{
+				System.out.println("Prime");
+			}
+		}
+
+	}
+
+}

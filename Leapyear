@@ -1,0 +1,24 @@
+package Leapyear;
+
+import java.util.Scanner;
+
+public class Leapyear {
+
+	public static void main(String[] args) {
+		
+		Scanner year = new Scanner(System.in);
+		System.out.println("Enter the year: ");
+		int leap;
+		leap = year.nextInt();
+		if(leap%4==0)
+		{
+			System.out.println(+leap+" is a leap year");
+		}
+		else
+		{
+			System.out.println(+leap+" is not a leap year");
+		}
+
+	}
+
+}
